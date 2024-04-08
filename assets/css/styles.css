@@ -274,6 +274,14 @@ a:hover {
 .social__box a {
   max-height: 40px;
   max-width: 40px;
+  transition: all 0.3s ease;
+  animation: shake 1.5s infinite alternate ease-in-out;
+}
+
+.social__box a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*
@@ -367,6 +375,14 @@ a:hover {
   }
 }
 
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
 
 @media (max-width: 1192px) {
   .container {
