@@ -168,8 +168,23 @@ a:hover {
 
 .get-started  {
   text-align: center;
-  margin-top: 64px
+  margin-top: 64px;
+  position: relative;
 }
+
+.get-started img.bg-layer {
+  position: absolute;
+  bottom: -53%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 505px;
+  max-height: 505px;
+  z-index: -1;
+  object-fit: cover;
+}
+
 
 .get-started .get-started__box {
   max-width: 738px;
@@ -245,8 +260,21 @@ a:hover {
  
 }
 
-.image-demo {
-  margin-top: 49px;
+/**
+** Image demo
+*/
+
+.image-demo img.bg-layer {
+  position: absolute;
+  bottom: -50%;
+  left: 12%;
+  width: 100%;
+  height: 100%;
+  max-width: 505px;
+  max-height: 505px;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
 .image-demo img {
@@ -396,6 +424,10 @@ a:hover {
     padding-right: 10px;
   }
 
+  .image-demo {
+    margin-top: 49px;
+  }
+
   .sign-in-button.sign-in-button--desk {
     position: absolute;
     top: 7px;
@@ -420,6 +452,10 @@ a:hover {
   }
 
   .save-hours__overview .left img {
+    position: relative;
+  }
+
+  .image-demo {
     position: relative;
   }
 
